@@ -17,7 +17,7 @@ namespace examen
 
             InitializeComponent();
             this.Controls.AddRange(new Control[] { lblNombre, txtDni, lblApellidos, txtApellidos, lblNombre, txtNombre, lblNota, txtNota,
-            btnAgregar, btnEliminar, btnConsultar, btnModificar, btnSuspensos, btnAprobados, btnMH, btnTodos, lstResultados });
+            btnAgregar, btnEliminar, btnConsultar, btnModificar, btnSuspensos, btnAprobados, btnMH, btnTodos,lstResultados});
         }
 
         private GestionCalificaciones GestionCalificaciones = new GestionCalificaciones();
@@ -51,15 +51,89 @@ namespace examen
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             var alumno = GestionCalificaciones.ConsultarAlumno(txtDni.Text);
-            MessageBox.Show(alumno != null ? $"{alumno.DNI} - {alumno.Nombre} - {alumno.Nota}" : "No encontrado.");
+            MessageBox.Show(alumno != null ? $"{alumno.DNI} - {alumno.Apellidos} - {alumno.Nombre} - {alumno.Nota} - {alumno.Calificacion}" : "No encontrado.");
 
         }
 
+        private void btnSuspensos_Click(object sender, EventArgs e)
+        {
+            // Obtener la lista de alumnos suspensos
+            List<Alumno> suspensos = GestionCalificaciones.ObtenerSuspensos();
 
+            // Mostrar los resultados en la ListBox o en un MessageBox
+            if (suspensos.Count > 0)
+            {
+                lstResultados.Items.Clear(); // Limpiar lista antes de agregar nuevos datos
 
+                foreach (var alumno in suspensos)
+                {
+                    lstResultados.Items.Add($"{alumno.DNI} - {alumno.Nombre} {alumno.Apellidos} - Nota: {alumno.Nota}- Calificacion: {alumno.Calificacion}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay alumnos suspensos.");
+            }
+        }
 
+        private void btnAprobados_Click(object sender, EventArgs e)
+        {
+            List<Alumno> aprobados = GestionCalificaciones.ObtenerAprobados();
 
+            // Mostrar los resultados en la ListBox o en un MessageBox
+            if (aprobados.Count > 0)
+            {
+                lstResultados.Items.Clear(); // Limpiar lista antes de agregar nuevos datos
 
+                foreach (var alumno in aprobados)
+                {
+                    lstResultados.Items.Add($"{alumno.DNI} - {alumno.Nombre} {alumno.Apellidos} - Nota: {alumno.Nota}- Calificacion: {alumno.Calificacion}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay alumnos aprobados.");
+            }
+        }
 
+        private void btnMH_Click(object sender, EventArgs e)
+        {
+            List<Alumno> mh = GestionCalificaciones.ObtenerMH();
+
+            // Mostrar los resultados en la ListBox o en un MessageBox
+            if (mh.Count > 0)
+            {
+                lstResultados.Items.Clear(); // Limpiar lista antes de agregar nuevos datos
+
+                foreach (var alumno in mh)
+                {
+                    lstResultados.Items.Add($"{alumno.DNI} - {alumno.Nombre} {alumno.Apellidos} - Nota: {alumno.Nota}- Calificacion: {alumno.Calificacion}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay alumnos MH.");
+            }
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            List<Alumno> todos = GestionCalificaciones.ObtenerTodos();
+
+            // Mostrar los resultados en la ListBox o en un MessageBox
+            if (todos.Count > 0)
+            {
+                lstResultados.Items.Clear(); // Limpiar lista antes de agregar nuevos datos
+                
+                foreach (var alumno in todos)
+                {
+                    lstResultados.Items.Add($"{alumno.DNI} - {alumno.Nombre} {alumno.Apellidos} - Nota: {alumno.Nota}- Calificacion: {alumno.Calificacion}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay alumnos.");
+            }
+        }
     }
 }

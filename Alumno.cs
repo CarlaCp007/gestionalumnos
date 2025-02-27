@@ -30,6 +30,7 @@ namespace examen
             Apellidos = apellidos;
             Nombre = nombre;
             Nota = nota;
+           
         }
     }
 

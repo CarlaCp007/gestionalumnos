@@ -101,6 +101,7 @@
             this.btnSuspensos.TabIndex = 4;
             this.btnSuspensos.Text = "Suspensos";
             this.btnSuspensos.UseVisualStyleBackColor = false;
+            this.btnSuspensos.Click += new System.EventHandler(this.btnSuspensos_Click);
             // 
             // btnAprobados
             // 
@@ -111,6 +112,7 @@
             this.btnAprobados.TabIndex = 5;
             this.btnAprobados.Text = "Aprobados";
             this.btnAprobados.UseVisualStyleBackColor = false;
+            this.btnAprobados.Click += new System.EventHandler(this.btnAprobados_Click);
             // 
             // btnMH
             // 
@@ -121,6 +123,7 @@
             this.btnMH.TabIndex = 6;
             this.btnMH.Text = "MH";
             this.btnMH.UseVisualStyleBackColor = false;
+            this.btnMH.Click += new System.EventHandler(this.btnMH_Click);
             // 
             // btnTodos
             // 
@@ -131,6 +134,7 @@
             this.btnTodos.TabIndex = 7;
             this.btnTodos.Text = "Todos";
             this.btnTodos.UseVisualStyleBackColor = false;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // lblDNI
             // 
@@ -218,9 +222,9 @@
             // lstResultados
             // 
             this.lstResultados.HideSelection = false;
-            this.lstResultados.Location = new System.Drawing.Point(263, 377);
+            this.lstResultados.Location = new System.Drawing.Point(239, 371);
             this.lstResultados.Name = "lstResultados";
-            this.lstResultados.Size = new System.Drawing.Size(227, 97);
+            this.lstResultados.Size = new System.Drawing.Size(257, 97);
             this.lstResultados.TabIndex = 17;
             this.lstResultados.UseCompatibleStateImageBehavior = false;
             // 
