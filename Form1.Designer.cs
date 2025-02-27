@@ -1,6 +1,6 @@
 ﻿namespace examen
 {
-    partial class Form1
+    partial class FormGestionCalificaciones
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,183 +28,228 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGestionCalificaciones));
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnSuspensos = new System.Windows.Forms.Button();
+            this.btnAprobados = new System.Windows.Forms.Button();
+            this.btnMH = new System.Windows.Forms.Button();
+            this.btnTodos = new System.Windows.Forms.Button();
+            this.lblDNI = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblApellidos = new System.Windows.Forms.Label();
+            this.lblNota = new System.Windows.Forms.Label();
+            this.txtDni = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNota = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lstResultados = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(92, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAgregar.Location = new System.Drawing.Point(149, 253);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(91, 33);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Registrar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.Location = new System.Drawing.Point(216, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnEliminar.Location = new System.Drawing.Point(273, 253);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(91, 33);
+            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button3
+            // btnConsultar
             // 
-            this.button3.Location = new System.Drawing.Point(348, 237);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnConsultar.Location = new System.Drawing.Point(405, 253);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(91, 33);
+            this.btnConsultar.TabIndex = 2;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // button4
+            // btnModificar
             // 
-            this.button4.Location = new System.Drawing.Point(471, 237);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 33);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnModificar.Location = new System.Drawing.Point(528, 253);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(91, 33);
+            this.btnModificar.TabIndex = 3;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnSuspensos
             // 
-            this.button5.Location = new System.Drawing.Point(92, 302);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSuspensos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSuspensos.Location = new System.Drawing.Point(139, 318);
+            this.btnSuspensos.Name = "btnSuspensos";
+            this.btnSuspensos.Size = new System.Drawing.Size(105, 33);
+            this.btnSuspensos.TabIndex = 4;
+            this.btnSuspensos.Text = "Suspensos";
+            this.btnSuspensos.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnAprobados
             // 
-            this.button6.Location = new System.Drawing.Point(216, 302);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(91, 33);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnAprobados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAprobados.Location = new System.Drawing.Point(263, 318);
+            this.btnAprobados.Name = "btnAprobados";
+            this.btnAprobados.Size = new System.Drawing.Size(109, 33);
+            this.btnAprobados.TabIndex = 5;
+            this.btnAprobados.Text = "Aprobados";
+            this.btnAprobados.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnMH
             // 
-            this.button7.Location = new System.Drawing.Point(348, 302);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(91, 33);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnMH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnMH.Location = new System.Drawing.Point(405, 318);
+            this.btnMH.Name = "btnMH";
+            this.btnMH.Size = new System.Drawing.Size(91, 33);
+            this.btnMH.TabIndex = 6;
+            this.btnMH.Text = "MH";
+            this.btnMH.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnTodos
             // 
-            this.button8.Location = new System.Drawing.Point(471, 302);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(91, 33);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnTodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnTodos.Location = new System.Drawing.Point(528, 318);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(91, 33);
+            this.btnTodos.TabIndex = 7;
+            this.btnTodos.Text = "Todos";
+            this.btnTodos.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblDNI
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(118, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.BackColor = System.Drawing.Color.White;
+            this.lblDNI.Location = new System.Drawing.Point(174, 128);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(37, 20);
+            this.lblDNI.TabIndex = 8;
+            this.lblDNI.Text = "DNI";
             // 
-            // label2
+            // lblNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(231, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "label2";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(287, 128);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(65, 20);
+            this.lblNombre.TabIndex = 9;
+            this.lblNombre.Text = "Nombre";
             // 
-            // label3
+            // lblApellidos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(372, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "label3";
+            this.lblApellidos.AutoSize = true;
+            this.lblApellidos.BackColor = System.Drawing.Color.White;
+            this.lblApellidos.Location = new System.Drawing.Point(428, 128);
+            this.lblApellidos.Name = "lblApellidos";
+            this.lblApellidos.Size = new System.Drawing.Size(65, 20);
+            this.lblApellidos.TabIndex = 10;
+            this.lblApellidos.Text = "Apellido";
             // 
-            // label4
+            // lblNota
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(494, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "label4";
+            this.lblNota.AutoSize = true;
+            this.lblNota.BackColor = System.Drawing.Color.White;
+            this.lblNota.Location = new System.Drawing.Point(550, 128);
+            this.lblNota.Name = "lblNota";
+            this.lblNota.Size = new System.Drawing.Size(43, 20);
+            this.lblNota.TabIndex = 11;
+            this.lblNota.Text = "Nota";
             // 
-            // textBox1
+            // txtDni
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 12;
+            this.txtDni.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtDni.Location = new System.Drawing.Point(139, 168);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(100, 26);
+            this.txtDni.TabIndex = 12;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(207, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 13;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtNombre.Location = new System.Drawing.Point(263, 168);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 26);
+            this.txtNombre.TabIndex = 13;
             // 
-            // textBox3
+            // txtApellidos
             // 
-            this.textBox3.Location = new System.Drawing.Point(348, 77);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 14;
+            this.txtApellidos.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtApellidos.Location = new System.Drawing.Point(404, 168);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(100, 26);
+            this.txtApellidos.TabIndex = 14;
             // 
-            // textBox4
+            // txtNota
             // 
-            this.textBox4.Location = new System.Drawing.Point(484, 77);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 15;
+            this.txtNota.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtNota.Location = new System.Drawing.Point(540, 168);
+            this.txtNota.Name = "txtNota";
+            this.txtNota.Size = new System.Drawing.Size(100, 26);
+            this.txtNota.TabIndex = 15;
             // 
-            // Form1
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(286, 57);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(218, 26);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Sistema calificaciones";
+            // 
+            // lstResultados
+            // 
+            this.lstResultados.HideSelection = false;
+            this.lstResultados.Location = new System.Drawing.Point(263, 377);
+            this.lstResultados.Name = "lstResultados";
+            this.lstResultados.Size = new System.Drawing.Size(227, 97);
+            this.lstResultados.TabIndex = 17;
+            this.lstResultados.UseCompatibleStateImageBehavior = false;
+            // 
+            // FormGestionCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(800, 496);
+            this.Controls.Add(this.lstResultados);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtNota);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtDni);
+            this.Controls.Add(this.lblNota);
+            this.Controls.Add(this.lblApellidos);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblDNI);
+            this.Controls.Add(this.btnTodos);
+            this.Controls.Add(this.btnMH);
+            this.Controls.Add(this.btnAprobados);
+            this.Controls.Add(this.btnSuspensos);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnAgregar);
+            this.Name = "FormGestionCalificaciones";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,22 +258,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnSuspensos;
+        private System.Windows.Forms.Button btnAprobados;
+        private System.Windows.Forms.Button btnMH;
+        private System.Windows.Forms.Button btnTodos;
+        private System.Windows.Forms.Label lblDNI;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblApellidos;
+        private System.Windows.Forms.Label lblNota;
+        private System.Windows.Forms.TextBox txtDni;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtNota;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListView lstResultados;
     }
 }
 

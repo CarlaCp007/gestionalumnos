@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace examen
@@ -14,9 +11,13 @@ namespace examen
         [STAThread]
         static void Main()
         {
+            // Habilitar estilos visuales para una mejor apariencia
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Ejecutar la aplicación con la ventana principal
+            Application.Run(new FormGestionCalificaciones());
         }
     }
 }
+
